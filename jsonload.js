@@ -26,6 +26,10 @@ myApp.controller('jsonCtrl',function($scope, $http){
     trong mảng,tức là kí tự ban đầu sẽ trở thành kí tự đầu tiên và ngược lại. */
     $scope.reversedMessage = function(){
         return $scope.empName.split("").reverse().join("");
+        /* join() dùng để kết hợi lại các phần tử trong mảng đã được
+        chuyển đổi bằng split() trước đó thành MỘT CHUỖI DUY NHẤT.
+        Không có kí tự nào ngăn cách giữa các phần tử. */
+        //Kết quả của hàm reversedMessage là một chuỗi mới, là kết quả của việc đảo ngược thứ tự các ký tự trong chuỗi ban đầu.
     }
 });
 
