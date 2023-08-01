@@ -2,7 +2,7 @@ var myApp = angular.module('myApp',[]);//khai báo angular
 //trong angular này có 2 controller là jsonCtrl và test Ctrl.
 
 myApp.controller('jsonCtrl',function($scope, $http){
-    /*lấy dữ liệu từ file employees.json bằng thuộc tính $http.get() và 
+    /*lấy dữ liệu từ file employees.json bằng $http.get() và 
     gán nó vào biến $scope.employees */
     $http.get('employees.json').success(function(data){
         $scope.employees = data;
